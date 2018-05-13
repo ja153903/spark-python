@@ -1,0 +1,13 @@
+Resilient
+
+Distributed
+    spread out among a cluster of computers that may or may not be running locally
+Dataset
+    we have data to work with (really big dataset)
+
+We can use RDD to transform the datset
+
+SparkContext:
+    Created by your driver program
+    is responsible for making RDD's resilient and distributed
+    Creates RDD's
