@@ -3,6 +3,7 @@ from pyspark import SparkConf, SparkContext
 conf = SparkConf().setMaster("local").setAppName("customer-totals")
 sc = SparkContext(conf=conf)
 
+# usually we want to connect to a database rather than a textfile
 orders = sc.textFile("./customer-orders.csv")
 
 def customSplit(line):
